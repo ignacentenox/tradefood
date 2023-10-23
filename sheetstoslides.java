@@ -10,23 +10,42 @@ function copiarDatosASlides() {
     var spreadsheet = SpreadsheetApp.openById(sheetId);
     
     // Obtiene las hojas específicas por su nombre
-    var sheetB = spreadsheet.getSheetByName('PRESENTACION EN LINEA'); 
-    var sheetC = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
-    var sheetD = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
-    var sheetE = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
+    var sheetE = spreadsheet.getSheetByName('PRESENTACION EN LINEA'); 
+    var sheetU = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
     var sheetL = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
+    var sheetI = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
+    var sheetV = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
+    var sheetQ = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
+    var sheetP = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
+    var sheetS = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
+    var sheetR = spreadsheet.getSheetByName('PRESENTACION EN LINEA');
     
     // Abre la presentación de Google Slides
     var presentation = SlidesApp.openById(slidesId);
     
-    //valores de las celdas B2, C2, D2, E2 y L2 de las diferentes hojas
-    var cellValues = [
-      sheetB.getRange("B2").getValue(),
-      sheetC.getRange("C2").getValue(),
-      sheetD.getRange("D2").getValue(),
-      sheetE.getRange("E2").getValue(),
-      sheetL.getRange("L2").getValue()
-    ];
+//valores de las celdas E2, U2, L2, I2, V2, Q2, P2 y S2 de las diferentes hojas
+var cellValues = [
+  sheetE.getRange("E2").getValue(),
+  sheetU.getRange("U2").getValue(),
+  sheetL.getRange("L2").getValue(),
+  sheetI.getRange("I2").getValue(),
+  sheetV.getRange("V2").getValue(),
+  sheetQ.getRange("Q2").getValue(),
+  sheetP.getRange("P2").getValue(),
+  sheetR.getRange("R2").getValue()
+  sheetS.getRange("S2").getValue()
+];
+
+    //C2 LOTE (NUMERO)
+    //E2 UBICACION
+    //U2 CANTIDAD
+    //L2 PESO PROM
+    //I2 ESTADO
+    //V2 SANIDAD
+    //Q2 DESBASTE
+    //P2 PLAZO
+    //S2 REVISO
+    //R2 OBSERVACIONES
     
     //diapositivas de la presentación
     var slides = presentation.getSlides();
